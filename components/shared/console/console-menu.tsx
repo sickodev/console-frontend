@@ -20,7 +20,7 @@ const ConsoleMenu = () => {
                 <nav className='p-2 text-center hover:bg-green-900/30 transition duration-300 animate-accordion-down cursor-default'>
                     <TypographyP>View Previous Sessions</TypographyP>
                 </nav>
-                <nav className='p-2 text-center hover:bg--900/30 transition duration-300 animate-accordion-down cursor-default'>
+                <nav className='p-2 text-center hover:bg-green-900/30 transition duration-300 animate-accordion-down cursor-default'>
                     <TypographyP>Help</TypographyP>
                 </nav>
                 <nav className='p-2 text-center hover:bg-red-900/30 transition duration-300 animate-accordion-down cursor-default'>
