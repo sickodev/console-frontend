@@ -74,7 +74,32 @@ const config = {
             },
         },
     },
-    plugins: [require("tailwindcss-animate")],
+    plugins: [
+        require("tailwindcss-animate"),
+        function ({ addUtilities }) {
+            addUtilities({
+                ".scrollbar-thin": {
+                    scrollbarWidth: "thin",
+                },
+                ".scrollbar-track": {
+                    "&::-webkit-scrollbar": {
+                        width: "6px",
+                        height: "6px",
+                    },
+                    "&::-webkit-scrollbar-track": {
+                        backgroundColor: "#000009",
+                    },
+                    "&::-webkit-scrollbar-thumb": {
+                        backgroundColor: "#43A047",
+                        borderRadius: "9999px",
+                    },
+                    "&::-webkit-scrollbar-thumb:hover": {
+                        backgroundColor: "#45a049",
+                    },
+                },
+            });
+        },
+    ],
 } satisfies Config;
 
 export default config;
